@@ -1,6 +1,13 @@
 body{
     font-family: barlow, arial, sans-serif;
-    background-color: #f1f4ff;
+    background-color: #eef0f2;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+main{
+    flex: 1;
 }
 h1{
     font-family: barlow condensed, arial narrow, sans-serif;
@@ -14,6 +21,7 @@ h1{
     padding: 16px 32px;
     background-color: #000080;
     border-radius: 8px;
+    margin: 5px 8px 0px 8px;
 }
 .enlace{
     padding: 8px 17px;
@@ -44,4 +52,62 @@ h1{
 .titulo img{
     height: 35px;
     width: auto;
+}
+.contacto {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin: 20px 0px;
+}
+#form-contacto{
+    background-color: #a7c8f7;
+    border-radius: 4px;
+    padding: 16px;
+}
+.form-info label{
+    color: #000080;
+    font-weight: 600;
+}
+.form-info{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 16px;
+}
+.form-info input, .form-info textarea{
+    border: 2px solid #71797E;
+    border-radius: 4px;
+}
+.boton-enviar{
+    padding: 12px 28px;
+    font-size: 20px;
+    background-color: #FFD700;
+    color: #000080;
+    border: none;
+    border-radius: 4px;
+}
+.boton-enviar:hover{
+    background-color: #000080;
+    color: #FFD700;
+}
+.pie{
+    padding: 25px 32px;
+    background-color: #000080;
+    color: #ffffff;
+}
+.pie p{
+    margin: 7px 0;
+}
+
+@media (max-width: 700px) {
+    .encabezado {
+        flex-direction: column;
+        padding: 16px;
+    } 
+    .menu {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 }

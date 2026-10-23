@@ -19,18 +19,22 @@
     </header>
     <main>
         <section class="contacto">
-            <form>
-                <div>
+            <form id="form-contacto">
+                <div class="form-info">
                     <label for="nombre">Nombre y Apellido:</label>
                     <input type="text" name="nombre" id="nombre" required>
                 </div>
-                <div>
+                <div class="form-info">
                     <label for="mail">Correo Electronico:</label>
                     <input type="email" name="mail" id="mail" required>
                 </div>
-                <div>
+                <div class="form-info">
                     <label for="telefono">Telefono:</label>
                     <input type="number" name="telefono" id="telefono" required>
+                </div>
+                <div class="form-info">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5"></textarea>
                 </div>
                 <button type="submit" class="boton-enviar">Enviar</button>
             </form>
