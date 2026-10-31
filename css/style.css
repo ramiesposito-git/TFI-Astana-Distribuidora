@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@400;500;600;700&display=swap');
+
 body{
-    font-family: barlow, arial, sans-serif;
+    font-family: 'Barlow', Arial, sans-serif;
     background-color: #F1F3F5;
     display: flex;
     flex-direction: column;
@@ -15,7 +17,7 @@ main{
     box-sizing: border-box;
 }
 h1, h2{
-    font-family: barlow condensed, arial narrow, sans-serif;
+    font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif;
     color: #000080;
 }
 .encabezado{
@@ -50,7 +52,7 @@ h1, h2{
     align-items: center;
     gap: 8px;
     font-size: 29px;
-    font-family: barlow condensed, arial narrow, sans-serif;
+    font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif;
     color: #FFD700;
     text-decoration: none;
 }
@@ -165,7 +167,13 @@ h1, h2{
 .error{
     color: #a30000;
     margin: 0;
-    font-size: 0.95rem;
+    font-size: 14px;
+    font-weight: 600;
+}
+.form-info input.invalido, .form-info textarea.invalido {
+    border-color: #d32f2f;
+    background-color: #fdf2f2;
+    outline: none;
 }
 
 @media (max-width: 700px) {
