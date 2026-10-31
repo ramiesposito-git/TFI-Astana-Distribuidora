@@ -158,8 +158,14 @@ h1, h2{
 }
 .columnas{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
+}
+.error{
+    color: #a30000;
+    margin: 0;
+    font-size: 0.95rem;
 }
 
 @media (max-width: 700px) {

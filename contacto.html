@@ -19,22 +19,26 @@
     </header>
     <main>
         <section class="contacto">
-            <form id="form-contacto">
+            <form id="form-contacto" novalidate>
                 <div class="form-info">
                     <label for="nombre">Nombre y Apellido:</label>
                     <input type="text" name="nombre" id="nombre" required>
+                    <p class="error" id="error-nombre"></p>
                 </div>
                 <div class="form-info">
                     <label for="mail">Correo Electronico:</label>
                     <input type="email" name="mail" id="mail" required>
+                    <p class="error" id="error-mail"></p>
                 </div>
                 <div class="form-info">
                     <label for="telefono">Telefono:</label>
-                    <input type="number" name="telefono" id="telefono" required>
+                    <input type="tel" name="telefono" id="telefono" required>
+                    <p class="error" id="error-telefono"></p>
                 </div>
                 <div class="form-info">
                     <label for="mensaje">Mensaje:</label>
                     <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+                    <p class="error" id="error-mensaje"></p>
                 </div>
                 <button type="submit" class="boton-enviar">Enviar</button>
             </form>
@@ -44,5 +48,6 @@
         <p>📧 Contacto: astanadistribuidorasl@hotmail.com | 📞 Tel: </p>
         <p>&copy; 2026 Astana Distribuidora - Todos los derechos reservados.</p>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
