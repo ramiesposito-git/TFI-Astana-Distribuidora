@@ -142,6 +142,45 @@ if(formulario){
         return true;
     }
 
+    function mostrarResumen(nombre, mail, telefono, mensaje) {
+        let resumen = document.getElementById("resumen");
+
+        //Si en el html de contacto no tiene el contenedor del resumen, se crea al lado del formulario
+        if (!resumen) {
+            resumen = document.createElement("div");
+            resumen.id = "resumen";
+            resumen.className = "resumen";
+            formulario.insertAdjacentElement("afterend", resumen);
+        }
+
+        //Se vacia por si habia un resumen anterior
+        resumen.replaceChildren();
+
+        const titulo = document.createElement("h2");
+        titulo.textContent = "¡Gracias por tu consulta!";
+        resumen.appendChild(titulo);
+
+        const intro = document.createElement("p");
+        intro.textContent = "Estos son los datos que enviaste:";
+        resumen.appendChild(intro);
+
+        const pNombre = document.createElement("p");
+        pNombre.textContent = "Nombre y Apellido: " + nombre;
+        resumen.appendChild(pNombre);
+
+        const pMail = document.createElement("p");
+        pMail.textContent = "Correo electronico: " + mail;
+        resumen.appendChild(pMail);
+
+        const pTelefono = document.createElement("p");
+        pTelefono.textContent = "Telefono: " + telefono;
+        resumen.appendChild(pTelefono);
+
+        const pMensaje = document.createElement("p");
+        pMensaje.textContent = "Mensaje: " + mensaje;
+        resumen.appendChild(pMensaje);
+    }
+
     formulario.addEventListener("submit", function (evento) {
         evento.preventDefault();
         
@@ -152,6 +191,11 @@ if(formulario){
         const mensaje = validarMensaje();
 
         if (nombre && mail && telefono && mensaje) {
+            mostrarResumen(campoNombre.value.trim(),
+            campoMail.value.trim(),
+            campoTelefono.value.trim(),
+            campoMensaje.value.trim()
+        );
             formulario.reset();
         } else {
             //Lleva el cursor al primer campo con error
