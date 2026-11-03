@@ -1,8 +1,9 @@
 //Carrusel
 const imagenes = [
-    {src:"img/imgcarrusel1.jpeg", alt:"Presentacion de Distribuidora Astana"},
-    {src:"img/imgcarrusel2.png", alt:"Catalogo de Canber"},
-    {src:"img/imgcarrusel3.png", alt:"Catalogo de Astana"}
+    {src:"img/presentacion-astana.jpeg", alt:"Presentacion de Distribuidora Astana"},
+    {src:"img/representante-canber.png", alt:"Representante de Canber"},
+    {src:"img/representante-fedar", alt:"Representante de Fedar"},
+    {src:"img/catalogo-astana.png", alt:"Catalogo de Astana"}
 ];
 const imagenCarrusel = document.getElementById("img-carrusel"); 
 const botonAnterior = document.getElementById("boton-anterior");
