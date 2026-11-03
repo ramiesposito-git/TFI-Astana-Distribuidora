@@ -60,7 +60,7 @@ h1, h2{
     height: 35px;
     width: auto;
 }
-.contacto {
+.contacto{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -175,27 +175,98 @@ h1, h2{
     background-color: #fdf2f2;
     outline: none;
 }
+.resumen{
+    flex: 1 1 280px;
+    max-width: 600px;
+    padding: 24px;
+    background-color: #ffffff;
+    border-left: 6px solid #000080;
+    border-radius: 4px;
+}
+.resumen:empty{ 
+    display: none; 
+}
+.imagen-producto img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.imagen-producto{
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boton-consultar{
+    padding: 7px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+    color: #000080;
+    background-color: #FFD700;
+    border-radius: 4px;
+    font-weight: 600;
+}
+.boton-consultar:hover{
+    background-color: #000080;
+    color: #FFD700;
+}
 
 @media (max-width: 700px) {
-    .encabezado {
+    main{
+        padding: 12px;
+    }
+    .encabezado{
         flex-direction: column;
         padding: 16px;
     } 
-    .menu {
+    .menu{
         width: 100%;
         justify-content: center;
         flex-wrap: wrap;
     }
-    .carrusel img {
+    .carrusel img{
         height: 300px; 
     }
-    .carrusel { 
+    .carrusel{ 
         padding: 10px; 
         gap: 8px;
     }
-    .carrusel button { 
+    .carrusel button{ 
         width: 30px; 
         height: 30px; 
         font-size: 12px; 
+    }
+    .columnas{
+        gap: 8px;
+    }
+    .tarjeta-producto{
+        flex: 1;
+        max-width: 32%;
+        min-width: 0;
+        width: auto;
+        min-height: 0;
+        padding: 8px;
+        gap: 8px;
+        overflow-wrap: break-word;
+    }
+    .imagen-producto{
+        height: 70px;
+    }
+    .tarjeta-producto h2{
+        font-size: 14px;
+    }
+    .tarjeta-producto p{
+        font-size: 10px;
+    }
+    .boton-consultar{
+        padding: 4px 4px;
+        font-size: 12px;
+    }
+    .resumen h2{
+        font-size: 22px;
+    }
+    .resumen p{
+        font-size: 15px;
     }
 }

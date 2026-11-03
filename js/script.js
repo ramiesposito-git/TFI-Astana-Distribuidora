@@ -2,7 +2,7 @@
 const imagenes = [
     {src:"img/presentacion-astana.jpeg", alt:"Presentacion de Distribuidora Astana"},
     {src:"img/representante-canber.png", alt:"Representante de Canber"},
-    {src:"img/representante-fedar", alt:"Representante de Fedar"},
+    {src:"img/representante-fedar.jpeg", alt:"Representante de Fedar"},
     {src:"img/catalogo-astana.png", alt:"Catalogo de Astana"}
 ];
 const imagenCarrusel = document.getElementById("img-carrusel"); 
