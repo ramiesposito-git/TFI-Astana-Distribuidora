@@ -26,15 +26,15 @@ Ramiro Esposito
 
 
 
-**Ingresar al sitio** 
+**Ingresar al sitio**
 
 * Entrá al sitio publicado mediante al enlace que se encuentra más abajo. Tambien puedes descargar el repositorio y abrir el archivo index.html en el navegador.
 
 
 
-**Navegación** 
+**Navegación**
 
-* Utiliza el menú superior para moverte entre la pagina Principal, Productos y Contacto. 
+* Utiliza el menú superior para moverte entre la pagina Principal, Productos y Contacto.
 * Podés hacer clic en el logo o en el nombre "Astana" para volver a la página principal desde cualquier página.
 
 
@@ -48,11 +48,15 @@ Ramiro Esposito
 
 **Pagina Productos**
 
+* Muestra el catálogo de productos de la distribuidora en tarjetas, cada una con su imagen, nombre y una breve descripción.
+* Las tarjetas se adaptan al tamaño de la pantalla, así que el catálogo también se puede ver desde un celular.
+* Podés hacer clic en el botón "Consultar" de cualquier producto para acceder a la página de Contacto y realizar una consulta.
+
 
 
 **Pagina Contacto**
 
-* Completá el formulario ingresando nombre y apellido, correo electrónico, teléfono y mensaje. 
+* Completá el formulario ingresando nombre y apellido, correo electrónico, teléfono y mensaje.
 * Al presionar Enviar, los datos serán validados mediante JavaScript.
 * Si algún dato es incorrecto o está incompleto, aparece un mensaje de error en rojo debajo del campo y el campo se marca con borde rojo.
 * Si todos los datos son válidos, se muestra un resumen de la consulta con lo que se completó y el formulario se limpia.
@@ -69,7 +73,9 @@ Nota: Los datos del formulario no se envían ni se guardan en ningún servidor: 
 
 
 
-Sitio publicado en GitHub Pages:
+Sitio publicado en GitHub Pages: https://ramiesposito-git.github.io/TFI-Astana-Distribuidora/
 
 
+
+Repositorio de GitHub: https://github.com/ramiesposito-git/TFI-Astana-Distribuidora
 
